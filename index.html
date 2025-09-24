@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marco Vercelli</title>
+</head>
+<body>
+
+    <div class="dot-cursor"></div>
+    
+    <div class="blur-overlay"></div>
+            <div class="logo-background"></div>
+            <div class="logo">Marco Vercelli</div>
+            <nav>
+              <a href="#" onclick="showAbout()">About</a>
+              <a href="#" onclick="showProjects()">Projects</a>
+              <a href="#" onclick="showContact()">Contact</a>
+            </nav>
+            <div id="Backbtn" class="Backbtn hidden">
+              <a href="#" onclick="backToProjects()">Back</a>
+            </div>
+<div class="container">
+  <img src="images/ShootingBTS1.jpg" class="homeimg visible" id="img1" alt="Modernità Liquida frame">
+  <img src="images/ShootingBTS3.jpg" class="homeimg" id="img2" alt="Modernità Liquida frame 2">
+</div>
+
+<div id="projectsGallery" class="projects-gallery hidden">
+  <div class="project-img-wrapper">
+    <img src="images/bolle/Bolla 1.png" class="project-img" alt="Bolla d'acqua" onclick="showPrj1()" usemap="#bubble1">
+    <map id="bubble1" name="bubble1">
+<area coords="242,291,290,303,316,323,334,350,349,379,340,416,325,451,278,463,243,468,242,291" href="#">
+</map>
+    <span class="project-label">Modernità Liquida PE 24/25</span>
+  </div>
+    <div class="project-img-wrapper">
+    <img src="images/bolle/bolla 2.png" class="project-img" alt="Bolla d'acqua" href="#" onclick="showPrj2()">
+    <span class="project-label">Illustrations</span>
+  </div>
+  <div class="project-img-wrapper">
+    <img src="images/bolle/bolla 3.png" class="project-img" alt="Bolla d'acqua" href="#" onclick="showPrj3()">
+    <span class="project-label">Technical sheets</span>
+  </div>
+</div>
+
+<div class="language-switcher">
+  <a href="#" onclick="switchToItalian()">IT</a> | <a href="#" onclick="switchToEnglish()">EN</a>
+</div>
+
+<div class="material-download">
+  <a href="https://api-daniel-gordon.s3.us-east-2.amazonaws.com/CV_Daniel_Gordon_115b0c0f71.pdf" target="_blank">CV</a> | <a href="https://api-daniel-gordon.s3.us-east-2.amazonaws.com/CV_Daniel_Gordon_115b0c0f71.pdf" target="_blank">PORTFOLIO</a>
+</div>
+
+<div id="about" class="about hidden">
+  <p id="aboutText">
+    Nato a Borgosesia il 12 Gennaio 1998, mi trasferisco a Milano nel 2017 per proseguire i miei studi. Appassionato di arte e cultura, dopo una Laurea triennale in Lettere Moderne all'Università Cattolica del Sacro Cuore, <br> il mio
+    desiderio di tradurre la mia passione per l’arte in elementi funzionali,
+    contemporanei e volti alla valorizzazione della persona mi ha spinto a
+    conseguire la <b> Laurea in Fashion Design </b> allo IED di Milano, <br> dove mi sono
+    laureato con una tesi incentrata sul concetto di <i>Modernità Liquida</i>.
+    Amo l’approccio di ricerca finalizzato alla creazione di una dimensione
+    artistica e comunicativa unica, che mi appassiona tradurre in capi mediante la
+    scelta di tessuti e materiali suggestivi ed efficaci che veicolino emozioni
+    senza mai perdere di vista <b> funzionalità, contemporaneità e sostenibilità. </b>
+    <br> Il mio approccio ad ogni progetto si basa su un minuzioso lavoro di analisi e
+    ricerca approfondita, creatività, visione contemporanea, con lo sguardo
+    sempre attento anche alla <b>storia di un brand.</b>
+  </p>
+</div>
+
+<div id="contactSection" class="contact hidden">
+  <div class="contact-content">
+ <a class="Close" onclick="hideContact()">X</a>
+ <a class="contactlink" href="https://www.instagram.com/marco_vercelli_/" target="_blank">Instagram</a>
+ <a class="contactlink" href="https://www.linkedin.com/in/marcovercelli/" target="_blank">Linkedin</a>
+ <a class="contactlink" href="https://www.behance.net/marcovercelli3" target="_blank">Behance</a>
+ <p class="mail">marcovercelli86@gmail.com</p>
+  </div>
+</div>
+
+<div id="galleryPrj1" class="gallery-prj1 hidden">
+  <div class="gallery-prj1-row">
+    <img src="images/shooting/shooting1.jpg" class="gallery-prj1-img" alt="Shooting 1">
+    <img src="images/shooting/shooting2.jpg" class="gallery-prj1-img" alt="Shooting 2">
+    <img src="images/shooting/shooting3.jpg" class="gallery-prj1-img" alt="Shooting 3">
+    <img src="images/shooting/shooting4.jpg" class="gallery-prj1-img" alt="Shooting 4">
+    <img src="images/shooting/shooting5.jpg" class="gallery-prj1-img" alt="Shooting 1">
+    <img src="images/shooting/shooting6.jpg" class="gallery-prj1-img" alt="Shooting 2">
+    <img src="images/shooting/shooting7.jpg" class="gallery-prj1-img" alt="Shooting 3">
+    <img src="images/shooting/shooting8.jpg" class="gallery-prj1-img" alt="Shooting 4">
+    <img src="images/shooting/shooting9.jpg" class="gallery-prj1-img" alt="Shooting 1">
+    <div class="gallery-prj1-img last-shooting-img" style="position:relative;">
+    <img src="images/shooting/shooting10.jpg" class="gallery-prj1-img" alt="Shooting 10">
+      <div class="shooting10-links">
+        <a href="#" class="shooting10-link" onclick="showCollectionProcess()">Show collection process</a>
+      </div>
+      <div class="last-img-overlay"></div> <!-- Overlay aggiunto -->
+    </div>
+    <!-- AGGIUNGI QUI IL VIDEO -->
+    <video 
+      class="gallery-prj1-video"
+      src="video/video.mov"
+      controls
+    ></video>
+  </div>
+  <div id="scrollToEndBtn" class="scroll-to-end-btn hidden">
+  <a href="#" onclick="scrollToEnd()">To the video</a>
+</div>
+  <div id="scrollToEndBtnArrow" class="scroll-to-end-btn-arrow hidden">
+  <a href="#" onclick="scrollToEnd()">→</a>
+</div>
+</div>
+
+<div id="galleryPrj2" class="gallery-prj2 hidden">
+  <div class="gallery-prj2-row">
+    <img src="images/illustrations/illustrazione1.png" class="gallery-prj2-img" alt="img1">
+    <img src="images/illustrations/illustrazione2.png" class="gallery-prj2-img" alt="img2">
+    <img src="images/illustrations/illustrazione3.png" class="gallery-prj2-img" alt="img3">
+    <img src="images/illustrations/illustrazione4.png" class="gallery-prj2-img" alt="img4">
+    <img src="images/illustrations/illustrazione5.png" class="gallery-prj2-img" alt="img5">
+    <img src="images/illustrations/illustrazione6.png" class="gallery-prj2-img" alt="img6">
+    <img src="images/illustrations/illustrazione7.png" class="gallery-prj2-img" alt="img7">
+    <img src="images/illustrations/illustrazione8.png" class="gallery-prj2-img" alt="img8">
+    <img src="images/illustrations/illustrazione9.png" class="gallery-prj2-img" alt="img9">
+    <img src="images/illustrations/illustrazione10.png" class="gallery-prj2-img" alt="img10">
+    <img src="images/illustrations/illustrazione11.png" class="gallery-prj2-img" alt="img11">
+    <img src="images/illustrations/illustrazione12.png" class="gallery-prj2-img" alt="img12">
+    <img src="images/illustrations/illustrazione13.png" class="gallery-prj2-img" alt="img13">
+    <img src="images/illustrations/illustrazione14.png" class="gallery-prj2-img" alt="img14">
+    <img src="images/illustrations/illustrazione15.png" class="gallery-prj2-img" alt="img15">
+    <img src="images/illustrations/illustrazione16.png" class="gallery-prj2-img" alt="img16">
+  </div>
+</div>
+
+<div id="galleryPrj3" class="gallery-prj3 hidden">
+  <div class="gallery-prj3-row">
+    <img src="images/schede tecniche/1scheda tecnica00001.png" class="gallery-prj3-img" alt="img1">
+    <img src="images/schede tecniche/1scheda tecnica00002.png" class="gallery-prj3-img" alt="img2">
+    <img src="images/schede tecniche/1scheda tecnica00003.png" class="gallery-prj3-img" alt="img3">
+    <img src="images/schede tecniche/2scheda tecnica00001.png" class="gallery-prj3-img" alt="img4">
+    <img src="images/schede tecniche/2scheda tecnica00002.png" class="gallery-prj3-img" alt="img5">
+    <img src="images/schede tecniche/2scheda tecnica00003.png" class="gallery-prj3-img" alt="img6">
+    <img src="images/schede tecniche/3scheda tecnica00001.png" class="gallery-prj3-img" alt="img7">
+    <img src="images/schede tecniche/3scheda tecnica00002.png" class="gallery-prj3-img" alt="img8">
+    <img src="images/schede tecniche/3scheda tecnica00003.png" class="gallery-prj3-img" alt="img9">
+    <img src="images/schede tecniche/4scheda tecnica00001.png" class="gallery-prj3-img" alt="img10">
+    <img src="images/schede tecniche/4scheda tecnica00002.png" class="gallery-prj3-img" alt="img10">
+    <img src="images/schede tecniche/4scheda tecnica00003.png" class="gallery-prj3-img" alt="img10">
+    <img src="images/schede tecniche/5scheda tecnica00001.png" class="gallery-prj3-img" alt="img7">
+    <img src="images/schede tecniche/5scheda tecnica00002.png" class="gallery-prj3-img" alt="img8">
+    <img src="images/schede tecniche/5scheda tecnica00003.png" class="gallery-prj3-img" alt="img9">
+    <img src="images/schede tecniche/6scheda tecnica00001.png" class="gallery-prj3-img" alt="img10">
+    <img src="images/schede tecniche/6scheda tecnica00002.png" class="gallery-prj3-img" alt="img10">
+    <img src="images/schede tecniche/6scheda tecnica00003.png" class="gallery-prj3-img" alt="img10">
+  </div>
+</div>
+
+<div id="galleryCollectionProcess" class="gallery-collection-process hidden">
+  <div class="gallery-collection-process-row">
+    <img src="images/collection/collection1.png" class="gallery-collection-img" alt="Collection 1">
+    <img src="images/collection/collection2.png" class="gallery-collection-img" alt="Collection 2">
+    <img src="images/collection/collection3.png" class="gallery-collection-img" alt="Collection 3">
+    <img src="images/collection/collection4.png" class="gallery-collection-img" alt="Collection 4">
+    <img src="images/collection/collection5.png" class="gallery-collection-img" alt="Collection 5">
+    <img src="images/collection/collection6.png" class="gallery-collection-img" alt="Collection 6">
+    <img src="images/collection/collection7.png" class="gallery-collection-img" alt="Collection 7">
+    <img src="images/collection/collection8.png" class="gallery-collection-img" alt="Collection 8">
+    <img src="images/collection/collection9.png" class="gallery-collection-img" alt="Collection 9">
+    <img src="images/collection/collection10.png" class="gallery-collection-img" alt="Collection 10">
+    <img src="images/collection/collection11.png" class="gallery-collection-img" alt="Collection 11">
+    <img src="images/collection/collection12.png" class="gallery-collection-img" alt="Collection 12">
+    <img src="images/collection/collection13.png" class="gallery-collection-img" alt="Collection 13">
+    <img src="images/collection/collection14.png" class="gallery-collection-img" alt="Collection 14">
+    <img src="images/collection/collection15.png" class="gallery-collection-img" alt="Collection 15">
+    </div>
+</div>
+
+<div id="scrollHint" class="scroll-hint">Scroll horizontally</div>
+<div id="whiteOverlay" class="white-overlay"></div>
+
+<footer>© Copyright 2025 Marco Vercelli All rights reserved</footer>
+
+<script src="script.js"></script>
+</body>
+
+</html>
