@@ -1101,11 +1101,13 @@ nav a,
 }
 
 .language-switcher {
-  position: fixed;
-  top: 310px;
-  left: 155px;
+  position: relative;
+  top: 0;
+  left: 0;
+  padding: 0px;
   font-family: 'aaux', sans-serif;
   font-size: 15px;
+  text-align: left;
   color: rgb(88, 83, 86);
   z-index: 11; /* Sopra gli altri elementi */
   opacity: 0;
